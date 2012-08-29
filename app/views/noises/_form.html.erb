@@ -15,9 +15,9 @@
     <%= f.label :sound %><br />
     <%= f.text_field :sound %>
   </div>
+  <%= collection_select(:noise, :beast_id, @beasts, :id, :name) %>
   <div class="field">
-    <%= f.label :beast_id %><br />
-    <%= f.number_field :beast_id %>
+    
   </div>
   <div class="actions">
     <%= f.submit %>

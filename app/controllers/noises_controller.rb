@@ -24,6 +24,7 @@ class NoisesController < ApplicationController
   # GET /noises/new
   # GET /noises/new.json
   def new
+    @beasts = Beast.all
     @noise = Noise.new
 
     respond_to do |format|

@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Beast Name:</b>
+  <%= @beast.name %>
+</p>
+<p>
+	<b>Noises:</b><br/>
+	<% @beast.noises.each do |noise| %>
+	<%= noise.sound %><br/>
+	<% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_beast_path(@beast) %> |
+<%= link_to 'Back', beasts_path %>
